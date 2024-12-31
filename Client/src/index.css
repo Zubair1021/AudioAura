@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* Remove the Scroll Bar */
+::-webkit-scrollbar{
+    display: none;
+}
+
+
+
+/* Heart Amination on Home page */
+
+.floating-heart {
+    position: absolute;
+    animation: floatUp 1s ease-in-out forwards;
+}
+
+@keyframes floatUp {
+    0% {
+        transform: translateY(0) scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: translateY(-30px) scale(1.6); /* Move slightly up and enlarge */
+    }
+    100% {
+        transform: translateY(-70px) scale(1.8); /* Move a bit higher and fade */
+        opacity: 0;
+    }
+}
+
+/* End of Heart Animation */
+
+@keyframes float {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-8px);
+    }
+  }
+  
+  .animate-float {
+    animation: float 1.5s ease-in-out infinite;
+  }
+
+
+
+  
+  
+
+
